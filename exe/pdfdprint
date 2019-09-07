@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'pdfdprint'
+
+puts "\n### PDF Direct Print Copyright (c) 2019 towards GmbH - v#{PDFDirectPrint::VERSION} ###\n\n"
+
+PDFDirectPrint.run

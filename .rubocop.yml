@@ -1,0 +1,16 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'lib/pdfdprint/version.rb'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 21
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 30

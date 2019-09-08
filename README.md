@@ -2,6 +2,17 @@
 
 Allows you to print PDF files directly to a modern network-enabled printer supporting raw PDF printing on TCP port 9100 from the command line.
 
+## Prerequisites
+
+- Ruby
+- Network-enabled printer supporting direct PDF printing
+
+## Installation
+
+```shell
+gem install pdfdprint
+```
+
 ## Usage
 
 ```
@@ -37,7 +48,11 @@ $ pdfdprint -p myprinter /home/me/Documents
 
 ### Unsupported Personality: UNKNOWN
 
-If you printer only prints out the `Unsupported Personality: UNKNOWN` text this means that your printer does not support PDF direct printing.
+If your printer only prints out the `Unsupported Personality: UNKNOWN` text this means that your printer does not support direct PDF printing.
+
+## Authors
+
+- Marc - [towards | Ruby & Web Development](https://towards.ch)
 
 ## License
 

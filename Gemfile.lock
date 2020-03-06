@@ -7,21 +7,23 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.0)
-    jaro_winkler (1.5.3)
-    parallel (1.17.0)
-    parser (2.6.4.0)
+    jaro_winkler (1.5.4)
+    parallel (1.19.1)
+    parser (2.7.0.4)
       ast (~> 2.4.0)
     rainbow (3.0.0)
-    rake (10.5.0)
-    rubocop (0.74.0)
+    rake (13.0.1)
+    rexml (3.2.4)
+    rubocop (0.80.1)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
-      parser (>= 2.6)
+      parser (>= 2.7.0.1)
       rainbow (>= 2.2.2, < 4.0)
+      rexml
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
     ruby-progressbar (1.10.1)
-    unicode-display_width (1.6.0)
+    unicode-display_width (1.6.1)
 
 PLATFORMS
   ruby
@@ -29,8 +31,8 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.17)
   pdfdprint!
-  rake (~> 10.0)
-  rubocop (~> 0.74.0)
+  rake (~> 13.0)
+  rubocop (~> 0.80.1)
 
 BUNDLED WITH
    1.17.2

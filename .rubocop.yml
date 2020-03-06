@@ -3,14 +3,23 @@ AllCops:
   Exclude:
     - 'lib/pdfdprint/version.rb'
 
+Layout/LineLength:
+  Max: 120
+
 Style/FrozenStringLiteralComment:
   Enabled: false
 
 Metrics/AbcSize:
   Max: 21
 
-Metrics/LineLength:
-  Max: 120
-
 Metrics/MethodLength:
   Max: 30
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true

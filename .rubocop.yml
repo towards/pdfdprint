@@ -2,6 +2,7 @@ AllCops:
   TargetRubyVersion: 2.6
   Exclude:
     - 'lib/pdfdprint/version.rb'
+  NewCops: enable
 
 Layout/LineLength:
   Max: 120
@@ -10,7 +11,7 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Metrics/AbcSize:
-  Max: 21
+  Max: 26
 
 Metrics/MethodLength:
   Max: 30

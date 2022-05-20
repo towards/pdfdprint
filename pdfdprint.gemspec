@@ -5,7 +5,7 @@ require 'pdfdprint/version'
 Gem::Specification.new do |spec|
   spec.name        = 'pdfdprint'
   spec.version     = PDFDirectPrint::VERSION
-  spec.authors     = ['Marc Bigler']
+  spec.authors     = ['Marc']
   spec.email       = ['hello@towards.ch']
   spec.summary     = 'Print PDF document directly to network-enabled printer'
   spec.description = 'Use raw printing functionality of network-enabled printer to print PDF files on port 9100/tcp.'
@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.files       = Dir['{bin,lib}/**/*', 'CHANGELOG.md', 'LICENSE', 'README.md']
   spec.executables << 'pdfdprint'
 
-  spec.required_ruby_version = '>= 2.5'
+  spec.required_ruby_version = '>= 2.6'
 
   spec.metadata = {
     'allowed_push_host' => 'https://rubygems.org',
@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
     'source_code_uri' => 'https://github.com/towards/pdfdprint'
   }
 
-  spec.add_development_dependency 'bundler', '~> 1.17'
+  spec.add_development_dependency 'bundler', '~> 2.3'
   spec.add_development_dependency 'rake', '~> 13.0'
-  spec.add_development_dependency 'rubocop', '~> 0.80.1'
+  spec.add_development_dependency 'rubocop', '~> 1.29'
 end

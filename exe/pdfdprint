@@ -2,6 +2,6 @@
 
 require 'pdfdprint'
 
-puts "\n### PDF Direct Print Copyright (c) 2019 towards GmbH - v#{PDFDirectPrint::VERSION} ###\n\n"
+puts "\n### PDF Direct Print Copyright (c) 2019-2022 towards GmbH - v#{PDFDirectPrint::VERSION} ###\n\n"
 
 PDFDirectPrint.run

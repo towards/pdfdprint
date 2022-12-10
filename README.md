@@ -24,6 +24,7 @@ Usage: pdfprint [options] [filename|directory]
     -p, --printer=PRINTER            Printer hostname or IP address
     -r, --resolution=RESOLUTION      Print resolution in dpi (default: 300)
     -t, --tray=TRAY                  Paper tray number (default: 0)
+    -w, --wait=TIME                  Wait time in seconds between files to be printed (default: 1)
 ```
 
 ## Examples

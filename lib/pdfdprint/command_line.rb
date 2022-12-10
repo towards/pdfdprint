@@ -6,7 +6,7 @@ module PDFDirectPrint
     attr_reader :options
 
     def initialize
-      @options = { format: 'A4', port: 9100, resolution: 300, tray: 0 }
+      @options = { format: 'A4', port: 9100, resolution: 300, tray: 0, wait: 1 }
     end
 
     def parse_options
@@ -30,6 +30,9 @@ module PDFDirectPrint
         opts.on('-t', '--tray=TRAY', 'Paper tray number (default: 0)') do |tray|
           options[:tray] = tray
         end
+        opts.on('-w', '--wait=TIME', 'Wait time in seconds between files to be printed (default: 1)', Integer) do |wait|
+          options[:wait] = wait
+        end
       end.parse!
     end
 
@@ -44,6 +47,11 @@ module PDFDirectPrint
         puts 'Please specify a directory or PDF file'
         exit 1
       end
+      unless options[:wait].between?(1, 60)
+        puts 'Please specify a wait time between 1 and 60 seconds'
+        exit 1
+      end
+
       return if File.exist?(ARGV[0])
 
       puts "[ERROR]: File or directory #{ARGV[0]} does not exist"
@@ -62,7 +70,7 @@ module PDFDirectPrint
         else
           puts "[ERROR]: Failed to print due to #{raw_printer.error_message}"
         end
-        sleep 1
+        sleep options[:wait]
       end
     end
 

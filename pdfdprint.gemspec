@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.files       = Dir['{bin,lib}/**/*', 'CHANGELOG.md', 'LICENSE', 'README.md']
   spec.executables << 'pdfdprint'
 
-  spec.required_ruby_version = '>= 2.7'
+  spec.required_ruby_version = '>= 3.1'
 
   spec.metadata = {
     'allowed_push_host' => 'https://rubygems.org',
